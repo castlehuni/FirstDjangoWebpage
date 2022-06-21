@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>저의 홈페이지입니다.</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/homepagestyle.css' %}">
+</head>
+<body>
+    <h2> 안녕하세요! 여기는 제가 관심 있는 내용을 정리한 홈페이지 입니다.</h2>
+    <p> 제 홈페이지에 와 주셔서 감사합니다.</p><hr>
+
+    <h3> 이곳은 최근에 제가 관심 있는 것들에 대한 것을 정리한 웹페이지 입니다.</h3>
+    <p>다음 목록들은 제가 최근에 관심있는 것들을 모아둔 리스트입니다.</p>
+    <ul>
+        <li><a href = "#interestsing">요즘 관심 있는 노래</a></li><br>
+        <li><a href = "#interestsports">요즘 관심 있는 스포츠 선수</a></li><br>
+        <li><a href = "#interestspace">요즘 관심 있는 여행지</a></li><br>
+    </ul>
+
+    <h3 id = "interestsing"> # 요즘 관심 있는 노래</h3>
+    <p> 제가 요즘 관심 있는 노래는 Ive의 Lovedive랑 Coldplay의 Viva la Vida입니다.
+        각각의 음악들이 끌린 이유는 밑에서 언급하겠습니다.</p><br>
+
+    <h3>1. Ive - Lovedive </h3>
+    {% load static %}
+    <table id = "iveinfo">
+        <caption>관심 있는 노래 중 Ive - Lovedive</caption>
+        <thead>
+        <tr><th>사진</th><th>영상</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src = "{% static 'image/ive.jpg' %}" width = "500" height = "560"></td>
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/8AMBslo1zng"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </td>
+        </tr>
+        </tbody>
+    </table><br>
+    <p> &raquo; 이 노래에 요즘 관심 있는 이유는 우선 가사의 스타일이 자신을 사랑하겠다는 그런 내용인것 자체가<br>
+        신선했고 또 노래 멜로디 자체가 약간 어두우면서도 중독적인 멜로디였기 때문에 요즘 흥미있는 노래인것 같습니다.</p><br>
+
+    <h3>2. Coldplay의 Viva la Vida </h3>
+    <table id = "coldplayinfo">
+        <caption>관심 있는 노래 중 Coldplay - Viva la Vida</caption>
+        <thead>
+        <tr><th>사진</th><th>영상</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src = "{% static 'image/coldplay.jpeg' %}" width = "500" height = "560"></td>
+            <td><iframe width="560" height="315" src="https://www.youtube.com/embed/38eALR-XstI"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay;
+                        clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <p> &raquo; 이 노래에 요즘 관심 있는 이유는 멜로디에서 부터 웅장하면서도 뭔가 엄청난 일이 벌어질 것 같으면서도<br>
+        장엄한 느낌이 들고 가사도 프랑스 혁명을 기반으로 작성된 것인진 몰라도 중장한 가사의 느낌이 제 흥미를 유발했습니다.<br>
+        (콜드플레이 무대 영상은 저작권으로 인해 영상이 안나와서 한국가수들이 부른것으로 대체했습니다.)
+    </p><br><br>
+
+    <h3 id = interestsports># 요즘 관심 있는 스포츠 선수</h3>
+    <table id = "Soninfo">
+        <caption>관심 있는 스포츠 선수인 손흥민</caption>
+        <thead>
+        <tr><th>사진 1</th><th>사진 2</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src = "{% static 'image/songoldenshoes.jpg' %}" width = "500" height = "560"></td>
+            <td><img src = "{% static 'image/son.jpg' %}" width = "500" height = "560"></td>
+        </tr>
+        </tbody>
+    </table><br>
+    <p> &raquo; 제가 스포츠를 좋아하기 때문에 경기들을 많이 보는데 요즘 스포츠 선수들 중에서도 가장 눈에 띄고<br>
+        흥미로운 선수는 아무래도 손흥민 선수인 것 같습니다. 우선 위에 사진에서도 볼 수 있듯이 잉글랜드 프리미어 리그<br>
+        에서 한국을 넘어 아시아인 최초로 득점왕이라는 타이틀을 얻었고 또한 서로 합작을 해 골을 만드는 득점 기록을 이미<br>
+        이전에 갖고 있었던 기록을 넘어 손-케 듀오가 EPL에 신기록을 만들고 있기 때문입니다. 그리고 요즘 국가대표 평가전<br>
+        에서도 눈에 띄는 활약을 보여주는 등 계속해서 눈에 띄는 활약을 보여주고 있기 때문에 가장 흥미로운 스포츠 선수입니다.
+    </p><br>
+
+    <h3 id = "interestspace"> # 요즘 관심 있는 여행지</h3><br>
+    <h3>1. 국내의 관심있는 여행지</h3>
+    <table id = "Mokpoinfo">
+        <caption>국내의 관심 있는 여행지</caption>
+        <thead>
+        <tr><th>사진 1</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src = "{% static 'image/mokpo.JPG' %}" width = "500" height = "560"></td>
+        </tr>
+        </tbody>
+    </table><br>
+    <p> &raquo; 국내에 있는 곳 중에서 가장 가고 싶고 흥미로운 여행지는 목포입니다. 목포에 왜 흥미가 있냐면 우선 목포에 있는 해상케이블카가<br>
+        궁금하기 때문입니다. 그 케이블카가 해상 위를 지나간다는 데 정말 그곳을 지나가는 지가 신기하면서도 궁금하기도 하고<br>
+        또한 '호텔 델루나'라는 드라마를 재밌게 봤는데 거기에 나왔던 호텔의 입구가 있는 곳이 바로 목포근대역사관이기 때문에 한 번<br>
+        방문해 보고 싶고 또 그것에 대한 흥미도 생겼습니다. 그리고 판옥선 스타일로 만든 카페가 있다고 하는데 어떻게 생겼을 지에 대한<br>
+        흥미가 생겼기 때문에 한번쯤 꼭 방문하고 싶고 관심이 생겼습니다.</p><br>
+
+    <h3>2. 해외의 관심있는 여행지</h3>
+    <table id = "Englandinfo">
+        <caption>해외의 관심 있는 여행지</caption>
+        <thead>
+        <tr><th>사진 1</th><th>사진 2</th></tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><img src = "{% static 'image/kingscross.jpg' %}" width = "560" height = "560"></td>
+            <td><img src = "{% static 'image/towerbridge.jpeg' %}" width = "560" height = "560"></td>
+        </tr>
+        </tbody>
+    </table><br>
+    <p> &raquo; 해외에 있는 나라 중의 가장 관심 있는 여행지는 영국입니다. 영국은 유럽에 있기 때문에 가기 어려우면서도 쉬운 <br>
+        나라입니다. 그리고 이 영국이 관심있는 이유는 우선 위에 사진에서도 볼 수 있듯이 타워브릿지나 빈 벤 그리고 대관람차 등 <br>
+        영국의 랜드마크를 실제로 보고 싶기도 하고 해리포터라는 소설을 정말 좋아하는데 그 해리포터의 배경 중에 하나인 킹스크로그 역이나<br>
+        다른 여행지를 한번쯤은 가보고 싶기 때문입니다. 그리고 영국 음식이 그렇게 맛 없다고 하던데 얼마나 맛이 없는 지에 대해서도 <br>
+        궁금하기 때문에 가장 관심있는 여행지입니다.</p><br>
+
+    <p> 이상으로 본인이 흥미로워 하는 것들에 대한 웹페이지를 마칩니다. 이 웹페이지를 봐주셔서 감사합니다.</p>
+</body>
+</html>
